@@ -5,6 +5,19 @@
 * [Watch Different Data Sets](https://www.toptal.com/developers/sorting-algorithms)
 * [Watch Audio Visual Interpretation](https://www.youtube.com/watch?v=kPRA0W1kECg)
 
+## Feature Tasks
+* Implement the sorting algorithms defined in the files
+  * Bubble Sort
+  * Insertion Sort
+  * Bucket Sort
+  * Merge Sort
+  * Quicksort Sort
+* Pass all the test cases
+
+## Submission Guidelines
+* Fork this repo
+* Submit to Canvas
+
 ## Sorting Algorithm Classification
 * [All Classifications](https://en.wikipedia.org/wiki/Sorting_algorithm#Classification)
 
