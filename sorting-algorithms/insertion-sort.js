@@ -1,14 +1,14 @@
 'use strict';
 
 module.exports = function(arr) {
-  let copiedArr = arr.splice();
+  let copiedArr = arr.slice();
   let newArr = [];
 
-  while (newArr.length < arr.length) {
-    let smallest = copiedArr[0];
+  while (copiedArr.length > 0) {
+    let smallest = copiedArr.splice(0);
     for (let i = 1; i < copiedArr.length; i++) {
       if (copiedArr[i] < smallest) {
-        smallest = copiedArr[i];
+        smallest = copiedArr.splice(0);
       }
     }
     newArr.push(smallest);
