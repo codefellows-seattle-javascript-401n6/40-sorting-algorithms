@@ -14,6 +14,12 @@
   * Quicksort Sort
 * Pass all the test cases
 
+The **NativeSort** file is just the built-in array sort. It is present to serve
+as proof that the test infrastructure works.  You don't need to implement any
+so-called "native sort" algorithm.
+
+Run the tests with `jest` or `jest --watch`.
+
 ## Submission Guidelines
 * Fork this repo
 * Submit to Canvas
