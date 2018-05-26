@@ -14,9 +14,9 @@
   * Quicksort Sort
 * Pass all the test cases
 
-The **NativeSort** file is just the built-in array sort. It is present to serve
-as proof that the test infrastructure works.  You don't need to implement any
-so-called "native sort" algorithm.
+The **NativeSort** file is just the built-in array sort. It is
+present to serve as proof that the test infrastructure works.
+You don't need to implement any so-called "native sort" algorithm.
 
 Run the tests with `jest` or `jest --watch`.
 
@@ -45,10 +45,46 @@ Run the tests with `jest` or `jest --watch`.
   machines.
 
 ## Sorting Algorithms
+* [Bubble Sort](https://en.wikipedia.org/wiki/Bubble__sort)
 * [Insertion Sort](https://en.wikipedia.org/wiki/Insertion_sort)
 * [Merge Sort](https://en.wikipedia.org/wiki/Merge_sort)
 * [Quicksort](https://en.wikipedia.org/wiki/Quicksort)
 * [Radix Sort](https://en.wikipedia.org/wiki/Radix_sort)
+
+### Bubble Sort
+* **Worst Case Performance:** `O(N^2)`
+* **Average Performance:** `O(N^2)`
+* **Best-Case Performance:** `O(N)`
+
+Bubble Sort is a famously inefficient sorting algorithm.
+But it gets the job done! It's easy to understand and not so
+hard to implement. It's an excellent first sorting algorithm
+to write.
+
+Here's the idea:
+* Move from the front toward to the end of the array
+* Compare every two adjacent values
+* Swap adjacent values if the larger is on the left
+* Keep track of if you've swapped any values or not
+* Continue moving toward the end of the array
+* Always swap any two unsorted adjacent values
+* Once you're at the end of the array start over from the front
+* The array is sorted if you ever go all the way through it
+  without swapping any two values.
+
+This **Bubble Sort** algorithm moves through the array over and over and makes
+values "bubble-up" toward the end of the array.
+
+It's inefficient because it might take many many iterations through
+the array to bring all large values from the front to the end. If
+the array starts as reverse-sorted that's the worst case scenario for
+Bubble Sort because it has to bring each large value all the way from the
+front to the end of the array only one at a time. 
+
+Bubble Sort actually performs very efficiently if you know the data
+starts as "nearly-sorted." If there's only a few values that need to
+be swapped in the whole array then Bubble Sort might be able to untwist
+the slight knots just in one pass!
 
 ### Insertion Sort
 * **Worst Case Performance:** `O(N^2)`
