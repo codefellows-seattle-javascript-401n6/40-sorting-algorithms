@@ -9,7 +9,7 @@ function sortArrayWithAlgorithm(arrayFactory, sortingFunction) {
 }
 
 describe("Sorting Algorithms", () => {
-  testWithAlg("Native Sort", Sorters.NativeSort);
+  // testWithAlg("Native Sort", Sorters.NativeSort);
   testWithAlg("Bubble Sort", Sorters.BubbleSort);
   // uncomment these as you start working on them.
   // testWithAlg("Bucket Sort", Sorters.BucketSort);
@@ -33,11 +33,11 @@ function testWithAlg(name, alg) {
     });
 
     it("should work for a many-item list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg)  
     });
 
     it("should work for an already-sorted-list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg)  
     });
   });
 }
