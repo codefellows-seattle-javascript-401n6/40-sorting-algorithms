@@ -15,4 +15,4 @@ module.exports = function(arr) {
   // expected output: Array [1, 21, 30, 4]
   arr.sort((a,b) => a - b);
   return arr;
-}
+};
