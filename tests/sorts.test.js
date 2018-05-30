@@ -1,3 +1,4 @@
+console.log('running')
 ArrayFactory = require('../util/array-factory');
 isSorted = require('../util/is-sorted');
 Sorters = require('../sorting-algorithms');
@@ -9,6 +10,7 @@ function sortArrayWithAlgorithm(arrayFactory, sortingFunction) {
 }
 
 describe("Sorting Algorithms", () => {
+  
   testWithAlg("Native Sort", Sorters.NativeSort);
   testWithAlg("Bubble Sort", Sorters.BubbleSort);
   // uncomment these as you start working on them.
