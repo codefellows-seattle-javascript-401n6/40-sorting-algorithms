@@ -33,11 +33,11 @@ function testWithAlg(name, alg) {
     });
 
     it("should work for a many-item list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg)  
     });
 
     it("should work for an already-sorted-list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg)  
     });
   });
 }

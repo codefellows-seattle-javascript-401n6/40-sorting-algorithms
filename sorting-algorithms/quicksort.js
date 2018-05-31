@@ -1,6 +1,6 @@
 // Very efficient and similar to merge sort
 
-module.exports = function quicksort(arr) {
+module.exports = quicksort = (arr) => {
   if (arr.length <= 1) return arr;
 
   var pivot = arr[0];

@@ -1,5 +1,5 @@
 // Complexity: Best Case = O(n)
-module.exports = function(arr) {
+module.exports = (arr) => {
   let countOuter = 0;
   let countInner = 0;
   let countSwap = 0;

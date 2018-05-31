@@ -1,7 +1,7 @@
 // find largest number in arr
 // O(N)
 
-module.exports = function(arr1) {
+module.exports = (arr1) => {
   let arr2 = [];
   for (let i = 0; i < arr1.length; i++) {
     if (arr2[arr1[i]] > 0) {
