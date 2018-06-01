@@ -1,16 +1,17 @@
-module.exports = function(arr) {
+module.exports = Quicksort = (arr) => {
   if(arr.length <= 1){
     return arr
   }
-  let swapPosition = Math.floor((arr.length - 1) / 2);
-  let swapValue = arr[swapPosition], less = [], more = [];
-  arr = arr.slice(0, swapPosition).concat(arr.slice(swapPosition + 1));
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] < swapValue){
-      less.push(arr[i]);
-    }else {
-      more.push(arr[i]);
+
+  const pivot = arr[arr.length -1];
+  const left = [];
+  const right = [];
+
+  for (let i = 0; i < arr.length -1; i++){
+    if(arr[i] < pivot) {
+      left.push(arr[i])
     }
+    else right.push(arr[i]);
   }
-  return arr;
+  return [...Quicksort(left), pivot, ...Quicksort(right)]
 };
