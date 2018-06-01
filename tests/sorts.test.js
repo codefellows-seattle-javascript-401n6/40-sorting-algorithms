@@ -12,7 +12,7 @@ describe("Sorting Algorithms", () => {
   testWithAlg("Native Sort", Sorters.NativeSort);
   testWithAlg("Bubble Sort", Sorters.BubbleSort);
   // uncomment these as you start working on them.
-  // testWithAlg("Bucket Sort", Sorters.BucketSort);
+  testWithAlg("Bucket Sort", Sorters.BucketSort);
   testWithAlg("Insertion Sort", Sorters.InsertionSort);
   testWithAlg("Merge Sort", Sorters.MergeSort);
   testWithAlg("Quicksort", Sorters.Quicksort);
