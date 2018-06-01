@@ -13,7 +13,7 @@ describe("Sorting Algorithms", () => {
   testWithAlg("Bubble Sort", Sorters.BubbleSort);
   // uncomment these as you start working on them.
   // testWithAlg("Bucket Sort", Sorters.BucketSort);
-  // testWithAlg("Insertion Sort", Sorters.InsertionSort);
+  testWithAlg("Insertion Sort", Sorters.InsertionSort);
   // testWithAlg("Merge Sort", Sorters.MergeSort);
   // testWithAlg("Quicksort", Sorters.Quicksort);
 });
@@ -33,11 +33,11 @@ function testWithAlg(name, alg) {
     });
 
     it("should work for a many-item list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg)  
     });
 
     it("should work for an already-sorted-list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg)  
     });
   });
 }
