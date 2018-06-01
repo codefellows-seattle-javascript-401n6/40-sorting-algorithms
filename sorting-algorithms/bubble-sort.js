@@ -10,9 +10,3 @@ module.exports = function(arr) {
   }
   return arr;
 }
-
-
-//1. Loop through the array for [i]
-//2. Loop through the array for [j]
-//3. Compare if arr[j - 1] is greater than arr[i]
-//4. If it is greater, swap 

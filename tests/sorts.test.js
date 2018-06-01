@@ -14,7 +14,7 @@ describe("Sorting Algorithms", () => {
   // uncomment these as you start working on them.
   // testWithAlg("Bucket Sort", Sorters.BucketSort);
   testWithAlg("Insertion Sort", Sorters.InsertionSort);
-  // testWithAlg("Merge Sort", Sorters.MergeSort);
+  testWithAlg("Merge Sort", Sorters.MergeSort);
   // testWithAlg("Quicksort", Sorters.Quicksort);
 });
 
