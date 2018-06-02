@@ -6,10 +6,12 @@ module.exports = function(arr) {
 
   // make sure no value is bigger than the value that comes after it.
   for (let i = 1; i < arr.length; i++) {
+    if (isNaN(arr[i]) || arr[i] === undefined) {
+      return false;
+    }
     if (arr[i - 1] > arr[i]) {
       return false;
     }
   }
   return true;
-}
-
+};

@@ -1,7 +1,7 @@
 // this function exists to prove that the test
 // infrastructure works correctly with the native
 // built-in sort.
-module.exports = function(arr) {
+module.exports = (arr) => {
   // big "gotcha" in the built-in sort.
   // it sorts by strings by default!
   // we must provide a comparator function to sort by numbers!
@@ -15,4 +15,4 @@ module.exports = function(arr) {
   // expected output: Array [1, 21, 30, 4]
   arr.sort((a,b) => a - b);
   return arr;
-}
+};
