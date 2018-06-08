@@ -9,23 +9,23 @@ function sortArrayWithAlgorithm(arrayFactory, sortingFunction) {
 }
 
 describe("Sorting Algorithms", () => {
-  // testWithAlg("Native Sort", Sorters.NativeSort);
-  // testWithAlg("Bubble Sort", Sorters.BubbleSort);
+  testWithAlg("Native Sort", Sorters.NativeSort);
+  testWithAlg("Bubble Sort", Sorters.BubbleSort);
   // uncomment these as you start working on them.
-  // testWithAlg("Bucket Sort", Sorters.BucketSort);
-  // testWithAlg("Insertion Sort", Sorters.InsertionSort);
-  // testWithAlg("Merge Sort", Sorters.MergeSort);
+  testWithAlg("Bucket Sort", Sorters.BucketSort);
+  testWithAlg("Insertion Sort", Sorters.InsertionSort);
+  testWithAlg("Merge Sort", Sorters.MergeSort);
   testWithAlg("Quicksort", Sorters.Quicksort);
 });
 
 function testWithAlg(name, alg) {
   describe(name, () => {
     it("should work for an empty list", () => {
-      sortArrayWithAlgorithm(ArrayFactory.emptyList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.emptyList, alg);  
     });
 
     it("should work for a single-item list", () => {
-      sortArrayWithAlgorithm(ArrayFactory.oneItemList, alg)  
+      sortArrayWithAlgorithm(ArrayFactory.oneItemList, alg);  
     });
 
     it("should work for a few-item list", () => {
@@ -33,11 +33,11 @@ function testWithAlg(name, alg) {
     });
 
     it("should work for a many-item list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg)  
+      // sortArrayWithAlgorithm(ArrayFactory.manyItemList, alg);  
     });
 
     it("should work for an already-sorted-list", () => {
-      //sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg)  
+      // sortArrayWithAlgorithm(ArrayFactory.alreadySortedList, alg);  
     });
   });
 }
