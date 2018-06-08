@@ -12,9 +12,6 @@ let quickSort = module.exports = function(arr){
     current;
 
   for(let index = 0; index < arr.length; index++){
-    console.log('current',current);
-    console.log('pivot', pivot);
-    console.log('17', lows, highs);
     if(index === pivotIndex){
       continue;
     }
@@ -25,7 +22,6 @@ let quickSort = module.exports = function(arr){
       highs.push(current);
     }
   }
-  console.log('lows', lows, highs);
   return quickSort(lows).concat([pivot]).concat(quickSort(highs));
 }; [32, 16, 8, 99, 0];
        
