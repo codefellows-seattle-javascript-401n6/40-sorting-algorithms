@@ -1,47 +1,32 @@
 'use strict';
 
 let quickSort = module.exports = function(arr){ 
-  console.log('4 hi');
-  let start = 0;
-  let middle = Math.floor((arr.length) / 2);
-     
-  let pivot;
-  let partitionIndex;
-  console.log('10 stuff', start, middle, pivot, partitionIndex);
-  console.log('20 arr', arr);
-  if(start < middle){
-    console.log('13 start < middle');
-    pivot = middle;
-    partitionIndex = partition(arr, pivot, start, middle);
-
-    quickSort(arr, start, partitionIndex - 1);
-    quickSort(arr, partitionIndex + 1, middle);
+  if (arr.length < 2){
+    return arr;
   }
+  var pivotIndex = Math.floor(arr.length / 2),
+    pivot = arr[pivotIndex],
+    lows = [],
+    highs = [],
+    index, 
+    current;
 
-  return arr;
-};
-      
-function partition(arr, pivot, start, middle){
-  console.log('24 partition')
-  var pivotValue = arr[pivot],
-    partitionIndex = start;
-
-  for(var i = start; i < middle; i++){
-    if(arr[i] < pivotValue){
-      swap(arr, i, partitionIndex);
-      partitionIndex++;
+  for(let index = 0; index < arr.length; index++){
+    console.log('current',current);
+    console.log('pivot', pivot);
+    console.log('17', lows, highs);
+    if(index === pivotIndex){
+      continue;
+    }
+    current = arr[index];
+    if(current < pivot){
+      lows.push(current);
+    }else{
+      highs.push(current);
     }
   }
-  swap(arr, middle, partitionIndex);
-  return partitionIndex;
-}
-
-function swap(arr, i, j){
-
-  var temp = arr[i];
-  arr[i] = arr[j];
-  arr[j] = temp;
-
-}
+  console.log('lows', lows, highs);
+  return quickSort(lows).concat([pivot]).concat(quickSort(highs));
+}; [32, 16, 8, 99, 0];
        
 
